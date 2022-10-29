@@ -9,9 +9,9 @@ class Account {
 
   // Calculate and return balance using transactions array
   get balance() {
-  	let balance = 0;
+    let balance = 0;
     for (let transaction of this.transactions) {
-    	balance += transaction.value;
+      balance += transaction.value;
     }
     return balance;
   }
@@ -43,7 +43,7 @@ class Transaction {
 
 
 // Class for withdrawing money
-class Withdrawal extends Transaction{
+class Withdrawal extends Transaction {
 
   get value() {
     return -this.amount;
@@ -56,7 +56,7 @@ class Withdrawal extends Transaction{
 
 
 // Class for depositing money
-class Deposit extends Transaction{
+class Deposit extends Transaction {
 
   get value() {
     return this.amount;
